@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smalta — Support</title>
+<meta name="description" content="Support for Smalta, a disk cleaner for Mac: developer contact and frequently asked questions.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="icon.png">
+<link rel="alternate" hreflang="uk" href="uk/">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="./"><img src="icon.png" alt="" width="44" height="44"><span>Smalta</span></a>
+    <nav>
+      <a href="./" aria-current="page">Support</a>
+      <a href="privacy/">Privacy</a>
+      <a href="uk/" lang="uk" hreflang="uk">Українською</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="wrap">
+    <h1>Smalta Support</h1>
+    <p class="lead">Smalta is a disk cleaner for Mac. It finds junk that is safe to remove, shows your whole disk as a glass mosaic and helps you clear out apps, large files, duplicates and empty folders you no longer need.</p>
+
+    <section>
+      <h2>Contact the developer</h2>
+      <p>A question, a bug or an idea — send an email:</p>
+      <p><a class="mail" href="mailto:pavlo_duda@icloud.com">pavlo_duda@icloud.com</a></p>
+      <p>To sort things out faster, describe what you did and what you saw, and mention your macOS version; a screenshot helps.</p>
+    </section>
+
+    <section>
+      <h2>Frequently asked questions</h2>
+
+      <h3>How do I let Smalta see my disk?</h3>
+      <p>Apps from the App Store only see the folders you open for them. On first launch, click “Allow Disk Access…”: the standard macOS panel opens on Macintosh HD, and all that’s left is to click “Allow”. If you prefer, give Smalta your Home folder only. You can change this at any time in Smalta Settings (⌘,).</p>
+
+      <h3>Why does Smalta suggest Full Disk Access?</h3>
+      <p>It’s optional. With it, Smalta also sees the Trash and the data that deleted apps left behind in your Library. Turn it on in System Settings → Privacy &amp; Security → Full Disk Access → Smalta, then relaunch Smalta. Everything else works without it.</p>
+
+      <h3>Will Smalta delete my photos, music or mail?</h3>
+      <p>No. Smalta never deletes Photos, Music, Mail or Messages and never offers them for deletion. On the disk map you can see how much space they take, but they are view-only.</p>
+
+      <h3>What do the colors in the junk list mean?</h3>
+      <ul>
+        <li><strong>Green — safe:</strong> it rebuilds on its own (developer caches, caches of closed apps, logs). Selected by default.</li>
+        <li><strong>Yellow — careful:</strong> you would have to download it again, or it’s gone for good (simulator runtimes, Xcode archives, installers, the Trash). Not selected.</li>
+        <li><strong>Red — in use:</strong> you opened it in the last 7 days. Not selected.</li>
+      </ul>
+      <p>Caches of apps that are open right now can’t be selected: quit the app first, and Smalta checks them again.</p>
+
+      <h3>Where do deleted files go?</h3>
+      <p>To the Trash, so you can put them back. Junk can be deleted right away instead if you turn off “Via Trash”. Emptying the Trash itself is always permanent.</p>
+
+      <h3>Why can’t the App Store version delete Xcode simulators?</h3>
+      <p>App Store apps run in a sandbox that doesn’t allow the <code>simctl</code> tool. Smalta shows how much space simulators take and how to remove them: in Xcode (Settings → Components, Window → Devices and Simulators) or with <code>xcrun simctl delete unavailable</code> in Terminal.</p>
+
+      <h3>What does Smalta Pro add?</h3>
+      <p>Without a purchase you get the disk map, all the tools and one junk cleanup a month. Smalta Pro adds unlimited junk cleanup and scheduled auto-clean. It’s a one-time purchase with no subscription, and it works on all your Macs signed in to the same Apple Account.</p>
+      <p>You can try everything free for 7 days. The trial never charges you or turns into a purchase: when it ends, Smalta simply goes back to the free version.</p>
+
+      <h3>How do I restore my purchase on another Mac?</h3>
+      <p>Open Smalta Pro in the sidebar and click “Restore Purchases”.</p>
+
+      <h3>How do I get a refund?</h3>
+      <p>Purchases are handled by Apple. Request a refund at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+
+      <h3>Which Macs does Smalta run on?</h3>
+      <p>Any Mac with macOS 15 Sequoia or later.</p>
+
+      <h3>How do I remove Smalta?</h3>
+      <p>Quit Smalta (menu bar icon → Quit) and move it from Applications to the Trash. Its settings and scan history stay in <code>~/Library/Containers/ua.smalta.Smalta</code>; delete that folder too to remove everything.</p>
+    </section>
+  </div>
+</main>
+<footer>
+  <div class="wrap">© 2026 Pavlo Duda. Smalta is an app for Mac.</div>
+</footer>
+</body>
+</html>
